@@ -1,0 +1,169 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    /* background: linear-gradient(45deg, #00002b, #2e3b4e); */
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+/* Navigation styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a2a3a;
+    padding: 10px 30px;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.anc {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 50px;
+}
+
+/* Home section styles */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.akshay {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+    transition: transform 0.28s;
+}
+
+.akshay:hover {
+    box-shadow: 7px 5px 30px gray;
+    transform: scale(1.02);
+    width: 82%;
+    display: block;
+    height: auto;
+}
+
+/* Services section styles */
+.services {
+    padding: 50px 20px;
+}
+
+.ser-tit {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(12, 12, 139);
+    font-style: italic;
+}
+
+.services-sub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ser-card {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #303f54;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sc-h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.sc-p {
+    font-size: 1em;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.c {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Social icons styles */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-right {
+        margin-top: 20px;
+    }
+
+    .home {
+        padding-top: 50px;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .akshay {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .services-sub {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ser-card {
+        max-width: 100%;
+    }
+}
